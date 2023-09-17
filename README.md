@@ -41,7 +41,7 @@ then the first move of disk $\large{k+1}$ is to stack $\large{3}$, and otherwise
 For example: for $\large{n=3}$, the first move of disk $\large{1}$ is to stack $\large{3}$, then the first move of disk $\large{2}$ is to stack $\large{2}$ and the first move of 
 disk $\large{3}$ is to stack $\large{3}$, and so on.  
 Now that we have the first move of each disk, we can calculate all next moves of a particular disk from its first move.  
-If $\large{n}$ is odd, then for odd numbered disks ($\large{i}$ is odd): Starting from the first move, the source stack and the destination stack numbers are decreasing by one
+If $\large{n}$ is odd, then for odd numbered disks ($\large{k}$ is odd): Starting from the first move, the source stack and the destination stack numbers are decreasing by one
 each time in cyclic manner. That is, if the first move is (1 3) then the second move is (3 2), so we calculate the next source stack from the previous source stack, and the same for
 destination stacks. The operation is clearly mod 3, but since stack numbers are (1, 2, 3), then we have to subtract 1 at first from each stack number so we have (0, 1, 2),
 and then we can work with those numbers mod 3, because they maintain their order after applying mod 3 to them and (1, 2, 3) don't.  
