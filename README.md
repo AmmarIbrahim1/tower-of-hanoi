@@ -70,6 +70,6 @@ So, the first block for a particular $\large{x}$ is given by $\large{2^i}$, and 
 calculated from $\large{y=2^i+2^{i+1}\times a \hspace{10pt} ... (1)}$ where $\large{a \in \mathbb{N}}$.  
 So to calculate $\large{x}$, we need to find integer $\large{i}$ that results in integer $\large{a}$ in equation $\large{(1)}$, and then we substitute the value of $\large{i}$
 in $\large{x=3+i}$.  
-To do that we iterate over $\large{i=0,1,2,...,n-1}$ and check if $\large{(y-2^i)\\% (2^{i+1})=0}$, if it is then this is our $\large{i}$.  
+To do that we iterate over $\large{i=0,1,2,...,n-1}$ and check if $\large{(y-2^i)\\% (2^{i+1})=0}$, if it is, then this is our $\large{i}$.  
 Now we know the order of every move, we can iterate over the array of moved disks and calculate next moves.  
 See attached file "main.cpp" for implementation.  
