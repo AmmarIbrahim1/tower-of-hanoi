@@ -36,8 +36,8 @@ The solution for $n=4$ is:
 
 What I first noticed is, if $\large{n}$ is odd then the first move is always to stack $\large{3}$ and if it's even then the first move is always to stack $\large{2}$. The first
 move in the solution is always of the smallest disk. If we write the first move of the other disks it's always from stack $\large{1}$ to either stack $\large{2}$ or stack $\large{3}$.  
-We can notice a pattern in the solution for the first move of each disk, if the $\large{i}\text{th}$ disk's first move is to stack $\large{2}$, 
-then the first move of disk $\large{i+1}$ is to stack $\large{3}$, and otherwise. ($\large{i=1}$ is the smallest disk and $\large{i=n}$ is the largest disk).
+We can notice a pattern in the solution for the first move of each disk, if the first move of disk $\large{k}$ is to stack $\large{2}$, 
+then the first move of disk $\large{k+1}$ is to stack $\large{3}$, and otherwise. ($\large{k=1}$ is the smallest disk and $\large{k=n}$ is the largest disk).
 For example: for $\large{n=3}$, the first move of disk $\large{1}$ is to stack $\large{3}$, then the first move of disk $\large{2}$ is to stack $\large{2}$ and the first move of 
 disk $\large{3}$ is to stack $\large{3}$, and so on.  
 Now that we have the first move of each disk, we can calculate all next moves of a particular disk from its first move.  
