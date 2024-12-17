@@ -50,7 +50,7 @@ Remember that this operation is only for odd $\large{n}$ and odd numbered disks.
 For odd $\large{n}$ and even numbered disks, or even $\large{n}$ and odd numbered disks, the stack number is increasing by 1, and we already subtract 1 for the reason we said
 before, so -1 and +1 cancel out and the final operation is: $\large{((x-1+1)\\% 3)+1=(x\\% 3)+1}$.  
 
-We can now calculate the moves of the disks, but we don't know the order of the moves (in each move, we don't know which disk is moving so we can't just calculate any move blindly).  
+We can now calculate the moves of the disks, but we don't know the order of the moves (we don't know which disk to move so we can't just calculate any move blindly).  
 
 **Remember, until now we know each disk's first move, and we know how to calculate the remaining moves using the first moves.**  
 
