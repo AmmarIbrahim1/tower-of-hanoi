@@ -47,7 +47,7 @@ int main()
         else moves[i][1]=2;
     }
     for (int i=1;i<=n;i++) moves[i][0]=1;
-    cout << "Number of disk moves: " << (1<<n)-1 << "\n";
+    cout << "The number of disk moves in total: " << (1<<n)-1 << "\n";
     for (int i=0;i<(1<<n)-1;i++)
     {
         for (int j=0;j<2;j++) cout << moves[disks_moved[i]][j] << " ";
