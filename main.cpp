@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -10,15 +11,18 @@ int mod(int a, int b)
 // pos = 2^i + 2^(i+1) * a
 int find_i(int n, int pos)
 {
+	int ret = 0;
     for (int i=0;i<=n-1;i++)
     {
-        if ((pos-(1<<i))%(1<<(i+1))==0) return i;
+        if ((pos-(1<<i))%(1<<(i+1))==0) ret=i;
     }
+	return ret;
 }
 
 int main()
 {
     int n;
+	cout << "How many disks? ";
     cin >> n;
     int disks_moved[(1<<n)-1]={0};
     disks_moved[0]=1;
@@ -43,7 +47,7 @@ int main()
         else moves[i][1]=2;
     }
     for (int i=1;i<=n;i++) moves[i][0]=1;
-    cout << (1<<n)-1 << "\n";
+    cout << "Number of disk moves: " << (1<<n)-1 << "\n";
     for (int i=0;i<(1<<n)-1;i++)
     {
         for (int j=0;j<2;j++) cout << moves[disks_moved[i]][j] << " ";
