@@ -5,7 +5,7 @@ I tried to look for number patterns in the solution of the Tower of Hanoi game w
 
 If we number the stacks in the game $\large{1}$, $\large{2}$ and $\large{3}$ from left to right, then we must move the disks from stack $\large{1}$ to stack $\large{3}$.
 
-The solution for $n=3$ is:
+The solution for $\large{n=3}$ is:
 
 1 3  
 1 2  
@@ -15,8 +15,8 @@ The solution for $n=3$ is:
 2 3  
 1 3  
 
-Each line describes a disk moved from stack $x$ to stack $y$, so the first line says: move the disk from stack $\large{1}$ to stack $\large{3}$, and so on.  
-The solution for $n=4$ is:    
+Each line describes a disk moved from stack $\large{x}$ to stack $\large{y}$, so the first line says: move the disk from stack $\large{1}$ to stack $\large{3}$, and so on.  
+The solution for $\large{n=4}$ is:    
 
 1 2  
 1 3  
