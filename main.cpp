@@ -11,18 +11,18 @@ int mod(int a, int b)
 // pos = 2^i + 2^(i+1) * a
 int find_i(int n, int pos)
 {
-	int ret = 0;
+    int ret = 0;
     for (int i=0;i<=n-1;i++)
     {
         if ((pos-(1<<i))%(1<<(i+1))==0) ret=i;
     }
-	return ret;
+    return ret;
 }
 
 int main()
 {
     int n;
-	cout << "How many disks? ";
+    cout << "How many disks? ";
     cin >> n;
     int disks_moved[(1<<n)-1]={0};
     disks_moved[0]=1;
