@@ -67,7 +67,7 @@ So if a block's number is $\large{y=2^i ; i\in \mathbb{N}}$, then $\large{x=3+i}
 Notice also the difference between each consecutive block for each $\large{x}$, when $\large{x=3}$ we have $\large{(3-1)=(5-3)=(7-5)=2=2^1}$. For $\large{x=4}$, we have
 $\large{(6-2)=(10-6)=(14-10)=4=2^2}$, and so on.  
 So, the first block for a particular $\large{x}$ is given by $\large{2^i}$, and the all other blocks that have this particular $\large{x}$ are
-calculated from $\large{y=2^i+2^{i+1}\times a \hspace{10pt} ... (1)}$ where $\large{a \in \mathbb{N}}$.  
+calculated from $$\large{y=2^i+2^{i+1}\times a \hspace{5pt}; \hspace{10pt} a \in \mathbb{N} ... (1)}$$.  
 So to calculate $\large{x}$, we need to find integer $\large{i}$ that results in integer $\large{a}$ in equation $\large{(1)}$, and then we substitute the value of $\large{i}$
 in $\large{x=3+i}$.  
 To do that we iterate over $\large{i=0,1,2,...,n-1}$ and check if $\large{(y-2^i)\\% (2^{i+1})=0}$, if it is, then this is our $\large{i}$.  
